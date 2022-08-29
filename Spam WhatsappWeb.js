@@ -1,5 +1,5 @@
 /* ------------------------------------------------------ */
-/*          SPAM MASIVO WHATSAPP WEB - BY BONILLA         */
+/*          SPAM MASIVO WHATSAPP WEB - BY MAXCODING       */
 /* ------------------------------------------------------ */
 const input = document.querySelectorAll("[contenteditable='true']")[1];
 let mensaje = prompt('Escriba su mensaje')
