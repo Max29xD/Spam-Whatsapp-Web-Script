@@ -1,5 +1,6 @@
 const SELECTORS = {
-  WHATSAPP_HEADER: "header > div > div > div > div",
+  WHATSAPP_HEADER_BUSINESS: "header > div > div > div",
+  WHATSAPP_HEADER_NORMAL: "header > div > div > div > div > span > div > div",
   MESSAGE_INPUT: 'div[contenteditable="true"]',
 };
 
@@ -191,13 +192,15 @@ function simulateEnterKey(element) {
 
 function waitForWhatsAppContainer() {
   return new Promise((resolve) => {
-    let container = document.querySelector(SELECTORS.WHATSAPP_HEADER);
+    let container = document.querySelector(SELECTORS.WHATSAPP_HEADER_BUSINESS) || 
+                   document.querySelector(SELECTORS.WHATSAPP_HEADER_NORMAL);
     if (container) {
       return resolve(container);
     }
 
     const observer = new MutationObserver((mutations, obs) => {
-      container = document.querySelector(SELECTORS.WHATSAPP_HEADER);
+      container = document.querySelector(SELECTORS.WHATSAPP_HEADER_BUSINESS) || 
+                 document.querySelector(SELECTORS.WHATSAPP_HEADER_NORMAL);
       if (container) {
         obs.disconnect();
         resolve(container);
