@@ -1,5 +1,5 @@
 const SELECTORS = {
-  WHATSAPP_HEADER: "header > div > div > div",
+  WHATSAPP_HEADER: "header > div > div > div > div",
   MESSAGE_INPUT: 'div[contenteditable="true"]',
 };
 
