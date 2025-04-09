@@ -2,7 +2,7 @@
 	<img src="https://raw.githubusercontent.com/Max29xD/cloud/991d237006d84478448e95f019dfd0fc85eae58d/MaxCoding%20Logo.svg" alt="Logo" width="500"/>
 </p>
 
-# Software 1 - Proyecto Surtidor
+# WSPAM - WhatsApp Message Spammer
 
 Este script es una extensión para WhatsApp Web que permite enviar mensajes múltiples de forma automatizada. Agrega un botón flotante a la interfaz que abre un diálogo donde puedes escribir un mensaje y especificar cuántas veces quieres enviarlo. La extensión simula la entrada de texto y el envío de mensajes de forma natural para evitar detecciones.
 
